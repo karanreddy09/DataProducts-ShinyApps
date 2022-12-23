@@ -43,7 +43,7 @@ ggplot(aes(x=actual, y=prediction),data=data.frame(actual=testdata$Price, predic
    geom_point() +geom_abline(color="red") +ggtitle("RandomForest Regression in R" )
 ```
 
-The shiny appication I developed has been published in shiny server at [https://te7dfh-karan0reddy-kota.shinyapps.io/assignment-shiny-app/](https://te7dfh-karan0reddy-kota.shinyapps.io/assignment-shiny-app).     
+The shiny appication I developed has been published in shiny server at [https://te7dfh-karan0reddy-kota.shinyapps.io/diamond_price_shiny_app/](https://te7dfh-karan0reddy-kota.shinyapps.io/diamond_price_shiny_app/).     
 To reproduce the shiny application on your local system, you need to install the relevent packages (caret and randomForest) and download diamond dataset, server.R and ui.R from github [repository](https://github.com/karanreddy09/DataProducts-ShinyApps).     
 
 ## How to Run the Application
