@@ -2,7 +2,9 @@
 title: "ShinyApp and Reproducible Pitch"
 author: "Karan Reddy K"
 date: "`r Sys.Date()`"
-output: html_document
+output:
+  html_document: default
+  pdf_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -17,7 +19,7 @@ For the developing Data Products course project I have created a Shiny Applicati
 ## Data Preparation
 Read the dataset [Diamond_price.csv](https://github.com/karanreddy09/DataProducts-ShinyApps) which is in the current directory.
 ```{r}
-data <- read.csv("/Users/KaranReddy_1/Downloads/JHU Assignmnets/module-9/Diamond Price Shiny App/Diamond_price.csv", header=TRUE)
+data <- read.csv("Diamond_price.csv", header=TRUE)
 str(data)
 data$Price <- gsub('\\$', '', data$Price)
 data$Price <- gsub(',', '', data$Price)
@@ -28,6 +30,7 @@ head(mydata)
 ```
 
 ## Build Model
+
 ```{r}
 library(caret)
 library(randomForest)
