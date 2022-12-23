@@ -10,8 +10,8 @@ shinyUI(pageWithSidebar(
     numericInput('Depth', 'Enter Depth(40 to 80):', 40.0 , min = 40, max = 80.0, step = 0.1),
     submitButton('Submit'),
     br(),
-    p(strong(em("Documentation:",a("Diamond price",href="index.html")))),
-    p(strong(em("Github repository:",a("Diamond price",href="http://anupb08.github.io/DataProducts/"))))
+    p(strong(em("Documentation:",a("Click Here",href="https://karanreddy09.github.io/DataProducts-ShinyApps/index.html")))),
+    p(strong(em("Github repository:",a("Click Here",href="https://github.com/karanreddy09/DataProducts-ShinyApps/"))))
     
   ),
   mainPanel(
